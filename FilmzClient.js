@@ -38,9 +38,9 @@ FilmzClient.prototype.getMovieByTitle = function (title) {
         throw new Error(title + ' is not in database!');
       } else {
         // Even though this snapshot contains only one entry, that entry has a
-        // key which we cannot possibly know, so the only we can access the info
-        // in that entry is to loop through the snapshot and then save the entry
-        // to an external variable.
+        // key which we cannot possibly know, so the only way we can access the
+        // info in that entry is to loop through the snapshot and then save the
+        // entry to an external variable.
         var movie;
 
         filteredMoviesSnapshot.forEach(function (movieSnapshot) {
